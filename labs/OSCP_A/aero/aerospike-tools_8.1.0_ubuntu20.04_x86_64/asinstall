@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+################################################################################
+# Install Aerospike Tools packages
+################################################################################
+
+if [ $EUID -ne 0 ]; then
+	echo "This script requires root or sudo privileges."
+	exit 1
+fi
+
+################################################################################
+# Dependency check
+
+echo Checking dependencies
+
+./dep-check
+if [ $? -ne 0 ]; then
+	echo "Failed to find all dependencies. Please install all required packages."
+	exit 1
+fi
+
+################################################################################
+# Install tools
+
+if [ -f aerospike-tools*.deb ]; then
+	echo Installing tools
+
+	# Use default arguments if none passed in.
+	if [ $# -eq 0 ]; then
+		echo dpkg -i aerospike-tools*.deb
+		dpkg -i aerospike-tools*.deb
+	else
+		echo dpkg "$@" aerospike-tools*.deb
+		dpkg "$@" aerospike-tools*.deb
+	fi
+fi
+
+################################################################################
