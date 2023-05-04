@@ -1,0 +1,1171 @@
+# extended LDIF
+#
+# LDAPv3
+# base <DC=oscp,DC=exam> with scope subtree
+# filter: (objectclass=*)
+# requesting: ALL
+#
+
+# oscp.exam
+dn: DC=oscp,DC=exam
+
+# Administrator, Users, oscp.exam
+dn: CN=Administrator,CN=Users,DC=oscp,DC=exam
+
+# Guest, Users, oscp.exam
+dn: CN=Guest,CN=Users,DC=oscp,DC=exam
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Guest
+description: Built-in account for guest access to the computer/domain
+distinguishedName: CN=Guest,CN=Users,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223064611.0Z
+whenChanged: 20220223072614.0Z
+uSNCreated: 8197
+memberOf: CN=Guests,CN=Builtin,DC=oscp,DC=exam
+uSNChanged: 16397
+name: Guest
+objectGUID:: eMh7nxal6EGvjDCiS+ODCQ==
+userAccountControl: 66082
+badPwdCount: 1
+codePage: 0
+countryCode: 0
+badPasswordTime: 132900750480528938
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 0
+primaryGroupID: 514
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOh9QEAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: Guest
+sAMAccountType: 805306368
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 20220223064703.0Z
+dSCorePropagationData: 16010101000417.0Z
+DefaultPassword: ESMWaterP1p3S!
+
+# krbtgt, Users, oscp.exam
+dn: CN=krbtgt,CN=Users,DC=oscp,DC=exam
+
+# Domain Computers, Users, oscp.exam
+dn: CN=Domain Computers,CN=Users,DC=oscp,DC=exam
+objectClass: top
+objectClass: group
+cn: Domain Computers
+description: All workstations and servers joined to the domain
+distinguishedName: CN=Domain Computers,CN=Users,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223064702.0Z
+whenChanged: 20220223064702.0Z
+uSNCreated: 12330
+uSNChanged: 12332
+name: Domain Computers
+objectGUID:: 1etp3vu+iUm6w6CnkCJ6QA==
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhAwIAAA==
+sAMAccountName: Domain Computers
+sAMAccountType: 268435456
+groupType: -2147483646
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 20220223064703.0Z
+dSCorePropagationData: 16010101000417.0Z
+
+# Domain Controllers, Users, oscp.exam
+dn: CN=Domain Controllers,CN=Users,DC=oscp,DC=exam
+
+# Schema Admins, Users, oscp.exam
+dn: CN=Schema Admins,CN=Users,DC=oscp,DC=exam
+
+# Enterprise Admins, Users, oscp.exam
+dn: CN=Enterprise Admins,CN=Users,DC=oscp,DC=exam
+
+# Cert Publishers, Users, oscp.exam
+dn: CN=Cert Publishers,CN=Users,DC=oscp,DC=exam
+objectClass: top
+objectClass: group
+cn: Cert Publishers
+description: Members of this group are permitted to publish certificates to th
+ e directory
+distinguishedName: CN=Cert Publishers,CN=Users,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223064702.0Z
+whenChanged: 20220223064702.0Z
+uSNCreated: 12342
+memberOf: CN=Denied RODC Password Replication Group,CN=Users,DC=oscp,DC=exam
+uSNChanged: 12344
+name: Cert Publishers
+objectGUID:: 4dqnPTNe5Ua4Tn2NV8l12Q==
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhBQIAAA==
+sAMAccountName: Cert Publishers
+sAMAccountType: 536870912
+groupType: -2147483644
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 20220223064703.0Z
+dSCorePropagationData: 16010101000417.0Z
+
+# Domain Admins, Users, oscp.exam
+dn: CN=Domain Admins,CN=Users,DC=oscp,DC=exam
+
+# Domain Users, Users, oscp.exam
+dn: CN=Domain Users,CN=Users,DC=oscp,DC=exam
+objectClass: top
+objectClass: group
+cn: Domain Users
+description: All domain users
+distinguishedName: CN=Domain Users,CN=Users,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223064702.0Z
+whenChanged: 20220223064702.0Z
+uSNCreated: 12348
+memberOf: CN=Users,CN=Builtin,DC=oscp,DC=exam
+uSNChanged: 12350
+name: Domain Users
+objectGUID:: 8YgDW25+sEq99zFlHE/4Xw==
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhAQIAAA==
+sAMAccountName: Domain Users
+sAMAccountType: 268435456
+groupType: -2147483646
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 20220223064703.0Z
+dSCorePropagationData: 16010101000417.0Z
+
+# Domain Guests, Users, oscp.exam
+dn: CN=Domain Guests,CN=Users,DC=oscp,DC=exam
+objectClass: top
+objectClass: group
+cn: Domain Guests
+description: All domain guests
+distinguishedName: CN=Domain Guests,CN=Users,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223064702.0Z
+whenChanged: 20220223064702.0Z
+uSNCreated: 12351
+memberOf: CN=Guests,CN=Builtin,DC=oscp,DC=exam
+uSNChanged: 12353
+name: Domain Guests
+objectGUID:: YJ0uBgPrP06FwTlgJQUmow==
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhAgIAAA==
+sAMAccountName: Domain Guests
+sAMAccountType: 268435456
+groupType: -2147483646
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 20220223064703.0Z
+dSCorePropagationData: 16010101000417.0Z
+
+# Group Policy Creator Owners, Users, oscp.exam
+dn: CN=Group Policy Creator Owners,CN=Users,DC=oscp,DC=exam
+objectClass: top
+objectClass: group
+cn: Group Policy Creator Owners
+description: Members in this group can modify group policy for the domain
+member: CN=Administrator,CN=Users,DC=oscp,DC=exam
+distinguishedName: CN=Group Policy Creator Owners,CN=Users,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223064702.0Z
+whenChanged: 20220223064702.0Z
+uSNCreated: 12354
+memberOf: CN=Denied RODC Password Replication Group,CN=Users,DC=oscp,DC=exam
+uSNChanged: 12391
+name: Group Policy Creator Owners
+objectGUID:: T9XUMhdrhUKs1t3YgDZtyg==
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhCAIAAA==
+sAMAccountName: Group Policy Creator Owners
+sAMAccountType: 268435456
+groupType: -2147483646
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 20220223064703.0Z
+dSCorePropagationData: 16010101000417.0Z
+
+# RAS and IAS Servers, Users, oscp.exam
+dn: CN=RAS and IAS Servers,CN=Users,DC=oscp,DC=exam
+objectClass: top
+objectClass: group
+cn: RAS and IAS Servers
+description: Servers in this group can access remote access properties of user
+ s
+distinguishedName: CN=RAS and IAS Servers,CN=Users,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223064702.0Z
+whenChanged: 20220223064702.0Z
+uSNCreated: 12357
+uSNChanged: 12359
+name: RAS and IAS Servers
+objectGUID:: JrMEAruspUevIhUZFcZUAA==
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhKQIAAA==
+sAMAccountName: RAS and IAS Servers
+sAMAccountType: 536870912
+groupType: -2147483644
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 20220223064703.0Z
+dSCorePropagationData: 16010101000417.0Z
+
+# Allowed RODC Password Replication Group, Users, oscp.exam
+dn: CN=Allowed RODC Password Replication Group,CN=Users,DC=oscp,DC=exam
+objectClass: top
+objectClass: group
+cn: Allowed RODC Password Replication Group
+description: Members in this group can have their passwords replicated to all 
+ read-only domain controllers in the domain
+distinguishedName: CN=Allowed RODC Password Replication Group,CN=Users,DC=oscp
+ ,DC=exam
+instanceType: 4
+whenCreated: 20220223064702.0Z
+whenChanged: 20220223064702.0Z
+uSNCreated: 12402
+uSNChanged: 12404
+name: Allowed RODC Password Replication Group
+objectGUID:: obWJedtxkEyhrHko52nxOg==
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhOwIAAA==
+sAMAccountName: Allowed RODC Password Replication Group
+sAMAccountType: 536870912
+groupType: -2147483644
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 20220223064703.0Z
+dSCorePropagationData: 16010101000417.0Z
+
+# Denied RODC Password Replication Group, Users, oscp.exam
+dn: CN=Denied RODC Password Replication Group,CN=Users,DC=oscp,DC=exam
+objectClass: top
+objectClass: group
+cn: Denied RODC Password Replication Group
+description: Members in this group cannot have their passwords replicated to a
+ ny read-only domain controllers in the domain
+member: CN=Read-only Domain Controllers,CN=Users,DC=oscp,DC=exam
+member: CN=Group Policy Creator Owners,CN=Users,DC=oscp,DC=exam
+member: CN=Domain Admins,CN=Users,DC=oscp,DC=exam
+member: CN=Cert Publishers,CN=Users,DC=oscp,DC=exam
+member: CN=Enterprise Admins,CN=Users,DC=oscp,DC=exam
+member: CN=Schema Admins,CN=Users,DC=oscp,DC=exam
+member: CN=Domain Controllers,CN=Users,DC=oscp,DC=exam
+member: CN=krbtgt,CN=Users,DC=oscp,DC=exam
+distinguishedName: CN=Denied RODC Password Replication Group,CN=Users,DC=oscp,
+ DC=exam
+instanceType: 4
+whenCreated: 20220223064702.0Z
+whenChanged: 20220223064702.0Z
+uSNCreated: 12405
+uSNChanged: 12433
+name: Denied RODC Password Replication Group
+objectGUID:: OVgwUWOvO0+806d7HAY8YA==
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhPAIAAA==
+sAMAccountName: Denied RODC Password Replication Group
+sAMAccountType: 536870912
+groupType: -2147483644
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 20220223064703.0Z
+dSCorePropagationData: 16010101000417.0Z
+
+# Read-only Domain Controllers, Users, oscp.exam
+dn: CN=Read-only Domain Controllers,CN=Users,DC=oscp,DC=exam
+
+# Enterprise Read-only Domain Controllers, Users, oscp.exam
+dn: CN=Enterprise Read-only Domain Controllers,CN=Users,DC=oscp,DC=exam
+objectClass: top
+objectClass: group
+cn: Enterprise Read-only Domain Controllers
+description: Members of this group are Read-Only Domain Controllers in the ent
+ erprise
+distinguishedName: CN=Enterprise Read-only Domain Controllers,CN=Users,DC=oscp
+ ,DC=exam
+instanceType: 4
+whenCreated: 20220223064702.0Z
+whenChanged: 20220223064702.0Z
+uSNCreated: 12429
+uSNChanged: 12431
+name: Enterprise Read-only Domain Controllers
+objectGUID:: NJP2Hk7WHUSgtuNwBGN1kQ==
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOh8gEAAA==
+sAMAccountName: Enterprise Read-only Domain Controllers
+sAMAccountType: 268435456
+groupType: -2147483640
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 20220223064703.0Z
+dSCorePropagationData: 16010101000417.0Z
+
+# Cloneable Domain Controllers, Users, oscp.exam
+dn: CN=Cloneable Domain Controllers,CN=Users,DC=oscp,DC=exam
+objectClass: top
+objectClass: group
+cn: Cloneable Domain Controllers
+description: Members of this group that are domain controllers may be cloned.
+distinguishedName: CN=Cloneable Domain Controllers,CN=Users,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223064702.0Z
+whenChanged: 20220223064702.0Z
+uSNCreated: 12440
+uSNChanged: 12442
+name: Cloneable Domain Controllers
+objectGUID:: gKGU1OjZ/kiVzdRloICpOQ==
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhCgIAAA==
+sAMAccountName: Cloneable Domain Controllers
+sAMAccountType: 268435456
+groupType: -2147483646
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 20220223064703.0Z
+dSCorePropagationData: 16010101000417.0Z
+
+# Protected Users, Users, oscp.exam
+dn: CN=Protected Users,CN=Users,DC=oscp,DC=exam
+objectClass: top
+objectClass: group
+cn: Protected Users
+description: Members of this group are afforded additional protections against
+  authentication security threats. See http://go.microsoft.com/fwlink/?LinkId=
+ 298939 for more information.
+distinguishedName: CN=Protected Users,CN=Users,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223064702.0Z
+whenChanged: 20220223064702.0Z
+uSNCreated: 12445
+uSNChanged: 12447
+name: Protected Users
+objectGUID:: M9f/QmiCpUaAkqVOOas+bg==
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhDQIAAA==
+sAMAccountName: Protected Users
+sAMAccountType: 268435456
+groupType: -2147483646
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+isCriticalSystemObject: TRUE
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 20220223064703.0Z
+dSCorePropagationData: 16010101000417.0Z
+
+# Key Admins, Users, oscp.exam
+dn: CN=Key Admins,CN=Users,DC=oscp,DC=exam
+
+# Enterprise Key Admins, Users, oscp.exam
+dn: CN=Enterprise Key Admins,CN=Users,DC=oscp,DC=exam
+
+# DnsAdmins, Users, oscp.exam
+dn: CN=DnsAdmins,CN=Users,DC=oscp,DC=exam
+objectClass: top
+objectClass: group
+cn: DnsAdmins
+description: DNS Administrators Group
+distinguishedName: CN=DnsAdmins,CN=Users,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223064741.0Z
+whenChanged: 20220223064741.0Z
+uSNCreated: 12486
+uSNChanged: 12488
+name: DnsAdmins
+objectGUID:: sNNH2Yul6UWfJelayDgVzA==
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhTQQAAA==
+sAMAccountName: DnsAdmins
+sAMAccountType: 536870912
+groupType: -2147483644
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# DnsUpdateProxy, Users, oscp.exam
+dn: CN=DnsUpdateProxy,CN=Users,DC=oscp,DC=exam
+objectClass: top
+objectClass: group
+cn: DnsUpdateProxy
+description: DNS clients who are permitted to perform dynamic updates on behal
+ f of some other clients (such as DHCP servers).
+distinguishedName: CN=DnsUpdateProxy,CN=Users,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223064741.0Z
+whenChanged: 20220223064741.0Z
+uSNCreated: 12491
+uSNChanged: 12491
+name: DnsUpdateProxy
+objectGUID:: PK0KtEiYtECezub5sH/GNA==
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhTgQAAA==
+sAMAccountName: DnsUpdateProxy
+sAMAccountType: 268435456
+groupType: -2147483646
+objectCategory: CN=Group,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 16010101000001.0Z
+
+# Deedee Lillian, CYBEROPS, EMPLOYEES, oscp.exam
+dn: CN=Deedee Lillian,OU=CYBEROPS,OU=EMPLOYEES,DC=oscp,DC=exam
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Deedee Lillian
+sn: Lillian
+givenName: Deedee
+distinguishedName: CN=Deedee Lillian,OU=CYBEROPS,OU=EMPLOYEES,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223070648.0Z
+whenChanged: 20220223082428.0Z
+uSNCreated: 12803
+uSNChanged: 16549
+name: Deedee Lillian
+objectGUID:: DsHQq0e0MkivP2yReXemYQ==
+userAccountControl: 66048
+badPwdCount: 1
+codePage: 0
+countryCode: 0
+badPasswordTime: 132907044505500681
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 132900736088569541
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhTwQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: Deedee.Lillian
+sAMAccountType: 805306368
+userPrincipalName: Deedee.Lillian@oscp.exam
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+dSCorePropagationData: 20220223072932.0Z
+dSCorePropagationData: 16010101000001.0Z
+DefaultPassword: ESMWaterP1p3S!
+
+# Manda Emee, CYBEROPS, EMPLOYEES, oscp.exam
+dn: CN=Manda Emee,OU=CYBEROPS,OU=EMPLOYEES,DC=oscp,DC=exam
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Manda Emee
+sn: Emee
+givenName: Manda
+distinguishedName: CN=Manda Emee,OU=CYBEROPS,OU=EMPLOYEES,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223070648.0Z
+whenChanged: 20220223082428.0Z
+uSNCreated: 12809
+uSNChanged: 16550
+name: Manda Emee
+objectGUID:: P9OtSTledku3zu5IA76vUA==
+userAccountControl: 66048
+badPwdCount: 1
+codePage: 0
+countryCode: 0
+badPasswordTime: 132907044539719320
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 132900736089194560
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhUAQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: Manda.Emee
+sAMAccountType: 805306368
+userPrincipalName: Manda.Emee@oscp.exam
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+dSCorePropagationData: 20220223072932.0Z
+dSCorePropagationData: 16010101000001.0Z
+DefaultPassword: ESMWaterP1p3S!
+
+# Danyette Boni, CYBEROPS, EMPLOYEES, oscp.exam
+dn: CN=Danyette Boni,OU=CYBEROPS,OU=EMPLOYEES,DC=oscp,DC=exam
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Danyette Boni
+sn: Boni
+givenName: Danyette
+distinguishedName: CN=Danyette Boni,OU=CYBEROPS,OU=EMPLOYEES,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223070648.0Z
+whenChanged: 20220223082428.0Z
+uSNCreated: 12815
+uSNChanged: 16551
+name: Danyette Boni
+objectGUID:: PwfSRpSPGEuwsTxQkVJdaQ==
+userAccountControl: 66048
+badPwdCount: 1
+codePage: 0
+countryCode: 0
+badPasswordTime: 132907044568156804
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 132900736089663359
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhUQQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: Danyette.Boni
+sAMAccountType: 805306368
+userPrincipalName: Danyette.Boni@oscp.exam
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+dSCorePropagationData: 20220223072932.0Z
+dSCorePropagationData: 16010101000001.0Z
+DefaultPassword: ESMWaterP1p3S!
+
+# Jasmina Major, CYBEROPS, EMPLOYEES, oscp.exam
+dn: CN=Jasmina Major,OU=CYBEROPS,OU=EMPLOYEES,DC=oscp,DC=exam
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Jasmina Major
+sn: Major
+givenName: Jasmina
+distinguishedName: CN=Jasmina Major,OU=CYBEROPS,OU=EMPLOYEES,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223070649.0Z
+whenChanged: 20220223082428.0Z
+uSNCreated: 12821
+uSNChanged: 16552
+name: Jasmina Major
+objectGUID:: DiwCDlEbHkG9Xh3fXCaVbA==
+userAccountControl: 66048
+badPwdCount: 1
+codePage: 0
+countryCode: 0
+badPasswordTime: 132907044605656806
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 132900736090288307
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhUgQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: Jasmina.Major
+sAMAccountType: 805306368
+userPrincipalName: Jasmina.Major@oscp.exam
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+dSCorePropagationData: 20220223072932.0Z
+dSCorePropagationData: 16010101000001.0Z
+DefaultPassword: ESMWaterP1p3S!
+
+# Jordana Meit, IT, EMPLOYEES, oscp.exam
+dn: CN=Jordana Meit,OU=IT,OU=EMPLOYEES,DC=oscp,DC=exam
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Jordana Meit
+sn: Meit
+givenName: Jordana
+distinguishedName: CN=Jordana Meit,OU=IT,OU=EMPLOYEES,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223070649.0Z
+whenChanged: 20220223082428.0Z
+uSNCreated: 12827
+uSNChanged: 16553
+name: Jordana Meit
+objectGUID:: TWFkDNkKXU2L5U/2wDI30g==
+userAccountControl: 66048
+badPwdCount: 1
+codePage: 0
+countryCode: 0
+badPasswordTime: 132907044660500619
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 132900736090757165
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhUwQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: Jordana.Meit
+sAMAccountType: 805306368
+userPrincipalName: Jordana.Meit@oscp.exam
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 16010101000001.0Z
+DefaultPassword: ESMWaterP1p3S!
+
+# Bobina Sumner, IT, EMPLOYEES, oscp.exam
+dn: CN=Bobina Sumner,OU=IT,OU=EMPLOYEES,DC=oscp,DC=exam
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Bobina Sumner
+sn: Sumner
+givenName: Bobina
+distinguishedName: CN=Bobina Sumner,OU=IT,OU=EMPLOYEES,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223070649.0Z
+whenChanged: 20220223082428.0Z
+uSNCreated: 12833
+uSNChanged: 16554
+name: Bobina Sumner
+objectGUID:: UrYZgv+X/U6MIKuNtXbglA==
+userAccountControl: 66048
+badPwdCount: 1
+codePage: 0
+countryCode: 0
+badPasswordTime: 132907044687282505
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 132900736091382117
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhVAQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: Bobina.Sumner
+sAMAccountType: 805306368
+userPrincipalName: Bobina.Sumner@oscp.exam
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 16010101000001.0Z
+DefaultPassword: ESMWaterP1p3S!
+
+# Norina Westberg, IT, EMPLOYEES, oscp.exam
+dn: CN=Norina Westberg,OU=IT,OU=EMPLOYEES,DC=oscp,DC=exam
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Norina Westberg
+sn: Westberg
+givenName: Norina
+distinguishedName: CN=Norina Westberg,OU=IT,OU=EMPLOYEES,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223070649.0Z
+whenChanged: 20220223082428.0Z
+uSNCreated: 12839
+uSNChanged: 16555
+name: Norina Westberg
+objectGUID:: ylI9qLZj606VA81zwRj34Q==
+userAccountControl: 66048
+badPwdCount: 1
+codePage: 0
+countryCode: 0
+badPasswordTime: 132907044721188716
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 132900736092007063
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhVQQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: Norina.Westberg
+sAMAccountType: 805306368
+userPrincipalName: Norina.Westberg@oscp.exam
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 16010101000001.0Z
+DefaultPassword: ESMWaterP1p3S!
+
+# Jsandye Gitt, IT, EMPLOYEES, oscp.exam
+dn: CN=Jsandye Gitt,OU=IT,OU=EMPLOYEES,DC=oscp,DC=exam
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Jsandye Gitt
+sn: Gitt
+givenName: Jsandye
+distinguishedName: CN=Jsandye Gitt,OU=IT,OU=EMPLOYEES,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223070649.0Z
+whenChanged: 20220223082428.0Z
+uSNCreated: 12845
+uSNChanged: 16556
+name: Jsandye Gitt
+objectGUID:: DpPXoHHex026iADyulBqtQ==
+userAccountControl: 66048
+badPwdCount: 1
+codePage: 0
+countryCode: 0
+badPasswordTime: 132907044765720001
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 132900736092475819
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhVgQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: Jsandye.Gitt
+sAMAccountType: 805306368
+userPrincipalName: Jsandye.Gitt@oscp.exam
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 16010101000001.0Z
+DefaultPassword: ESMWaterP1p3S!
+
+# Liv Ungley, IT, EMPLOYEES, oscp.exam
+dn: CN=Liv Ungley,OU=IT,OU=EMPLOYEES,DC=oscp,DC=exam
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Liv Ungley
+sn: Ungley
+givenName: Liv
+distinguishedName: CN=Liv Ungley,OU=IT,OU=EMPLOYEES,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223070649.0Z
+whenChanged: 20230503105217.0Z
+uSNCreated: 12851
+uSNChanged: 61510
+name: Liv Ungley
+objectGUID:: y5fypXLuXEKjNt6uzcYK/g==
+userAccountControl: 66048
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 132907044796188701
+lastLogoff: 0
+lastLogon: 133275847370150841
+pwdLastSet: 132900736092944580
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhVwQAAA==
+accountExpires: 9223372036854775807
+logonCount: 33
+sAMAccountName: Liv.Ungley
+sAMAccountType: 805306368
+userPrincipalName: Liv.Ungley@oscp.exam
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 16010101000001.0Z
+lastLogonTimestamp: 133275847370150841
+DefaultPassword: ESMWaterP1p3S!
+
+# Bernadina Hemphill, FINANCE, EMPLOYEES, oscp.exam
+dn: CN=Bernadina Hemphill,OU=FINANCE,OU=EMPLOYEES,DC=oscp,DC=exam
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Bernadina Hemphill
+sn: Hemphill
+givenName: Bernadina
+distinguishedName: CN=Bernadina Hemphill,OU=FINANCE,OU=EMPLOYEES,DC=oscp,DC=ex
+ am
+instanceType: 4
+whenCreated: 20220223070649.0Z
+whenChanged: 20220223082428.0Z
+uSNCreated: 12857
+uSNChanged: 16558
+name: Bernadina Hemphill
+objectGUID:: CKOUtpu3qkW8eG1TVQhv4A==
+userAccountControl: 66048
+badPwdCount: 1
+codePage: 0
+countryCode: 0
+badPasswordTime: 132907044842751270
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 132900736093413322
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhWAQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: Bernadina.Hemphill
+sAMAccountType: 805306368
+userPrincipalName: Bernadina.Hemphill@oscp.exam
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 16010101000001.0Z
+DefaultPassword: ESMWaterP1p3S!
+
+# Lishe Snodgrass, FINANCE, EMPLOYEES, oscp.exam
+dn: CN=Lishe Snodgrass,OU=FINANCE,OU=EMPLOYEES,DC=oscp,DC=exam
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Lishe Snodgrass
+sn: Snodgrass
+givenName: Lishe
+distinguishedName: CN=Lishe Snodgrass,OU=FINANCE,OU=EMPLOYEES,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223070649.0Z
+whenChanged: 20220223082428.0Z
+uSNCreated: 12863
+uSNChanged: 16559
+name: Lishe Snodgrass
+objectGUID:: t+dB5DrVK0S9tOk2kTVRoA==
+userAccountControl: 66048
+badPwdCount: 1
+codePage: 0
+countryCode: 0
+badPasswordTime: 132907044871969957
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 132900736094038312
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhWQQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: Lishe.Snodgrass
+sAMAccountType: 805306368
+userPrincipalName: Lishe.Snodgrass@oscp.exam
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 16010101000001.0Z
+DefaultPassword: ESMWaterP1p3S!
+
+# Shari Klute, FINANCE, EMPLOYEES, oscp.exam
+dn: CN=Shari Klute,OU=FINANCE,OU=EMPLOYEES,DC=oscp,DC=exam
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Shari Klute
+sn: Klute
+givenName: Shari
+distinguishedName: CN=Shari Klute,OU=FINANCE,OU=EMPLOYEES,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223070649.0Z
+whenChanged: 20220223082428.0Z
+uSNCreated: 12869
+uSNChanged: 16560
+name: Shari Klute
+objectGUID:: v4Ewj3PEDU6uZw55iwp1og==
+userAccountControl: 66048
+badPwdCount: 1
+codePage: 0
+countryCode: 0
+badPasswordTime: 132907044914938753
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 132900736094507054
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhWgQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: Shari.Klute
+sAMAccountType: 805306368
+userPrincipalName: Shari.Klute@oscp.exam
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 16010101000001.0Z
+DefaultPassword: ESMWaterP1p3S!
+
+# Ray Gayelord, FINANCE, EMPLOYEES, oscp.exam
+dn: CN=Ray Gayelord,OU=FINANCE,OU=EMPLOYEES,DC=oscp,DC=exam
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Ray Gayelord
+sn: Gayelord
+givenName: Ray
+distinguishedName: CN=Ray Gayelord,OU=FINANCE,OU=EMPLOYEES,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223070649.0Z
+whenChanged: 20220223082428.0Z
+uSNCreated: 12875
+uSNChanged: 16561
+name: Ray Gayelord
+objectGUID:: PvnyT9FpT0uIO146i+Jf8w==
+userAccountControl: 66048
+badPwdCount: 1
+codePage: 0
+countryCode: 0
+badPasswordTime: 132907044958844975
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 132900736094975829
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhWwQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: Ray.Gayelord
+sAMAccountType: 805306368
+userPrincipalName: Ray.Gayelord@oscp.exam
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 16010101000001.0Z
+DefaultPassword: ESMWaterP1p3S!
+
+# Ketty Agan, FINANCE, EMPLOYEES, oscp.exam
+dn: CN=Ketty Agan,OU=FINANCE,OU=EMPLOYEES,DC=oscp,DC=exam
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Ketty Agan
+sn: Agan
+givenName: Ketty
+distinguishedName: CN=Ketty Agan,OU=FINANCE,OU=EMPLOYEES,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223070649.0Z
+whenChanged: 20220223082428.0Z
+uSNCreated: 12881
+uSNChanged: 16562
+name: Ketty Agan
+objectGUID:: syGj7CwHoUSrZJ4LV+vXLg==
+userAccountControl: 66048
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 0
+lastLogoff: 0
+lastLogon: 132907057596202236
+pwdLastSet: 132900736095600814
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhXAQAAA==
+accountExpires: 9223372036854775807
+logonCount: 8
+sAMAccountName: Ketty.Agan
+sAMAccountType: 805306368
+userPrincipalName: Ketty.Agan@oscp.exam
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 16010101000001.0Z
+lastLogonTimestamp: 132900750775939825
+DefaultPassword: ESMWaterP1p3S!
+
+# Lark Mosora, FINANCE, EMPLOYEES, oscp.exam
+dn: CN=Lark Mosora,OU=FINANCE,OU=EMPLOYEES,DC=oscp,DC=exam
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Lark Mosora
+sn: Mosora
+givenName: Lark
+distinguishedName: CN=Lark Mosora,OU=FINANCE,OU=EMPLOYEES,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223070649.0Z
+whenChanged: 20220223082428.0Z
+uSNCreated: 12887
+uSNChanged: 16563
+name: Lark Mosora
+objectGUID:: CuHltk0olkS7dKiGxP31XA==
+userAccountControl: 66048
+badPwdCount: 1
+codePage: 0
+countryCode: 0
+badPasswordTime: 132907045101959229
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 132900736096069570
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhXQQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: Lark.Mosora
+sAMAccountType: 805306368
+userPrincipalName: Lark.Mosora@oscp.exam
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 16010101000001.0Z
+DefaultPassword: ESMWaterP1p3S!
+
+# Fania Willi, FINANCE, EMPLOYEES, oscp.exam
+dn: CN=Fania Willi,OU=FINANCE,OU=EMPLOYEES,DC=oscp,DC=exam
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Fania Willi
+sn: Willi
+givenName: Fania
+distinguishedName: CN=Fania Willi,OU=FINANCE,OU=EMPLOYEES,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223070649.0Z
+whenChanged: 20220223082428.0Z
+uSNCreated: 12893
+uSNChanged: 16564
+name: Fania Willi
+objectGUID:: +hNQbuvB10qOc/RYG4Kyog==
+userAccountControl: 66048
+badPwdCount: 1
+codePage: 0
+countryCode: 0
+badPasswordTime: 132907045129459265
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 132900736096538334
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhXgQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: Fania.Willi
+sAMAccountType: 805306368
+userPrincipalName: Fania.Willi@oscp.exam
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 16010101000001.0Z
+DefaultPassword: ESMWaterP1p3S!
+
+# Loutitia Mercado, FINANCE, EMPLOYEES, oscp.exam
+dn: CN=Loutitia Mercado,OU=FINANCE,OU=EMPLOYEES,DC=oscp,DC=exam
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Loutitia Mercado
+sn: Mercado
+givenName: Loutitia
+distinguishedName: CN=Loutitia Mercado,OU=FINANCE,OU=EMPLOYEES,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223070649.0Z
+whenChanged: 20220223082428.0Z
+uSNCreated: 12899
+uSNChanged: 16565
+name: Loutitia Mercado
+objectGUID:: sECrPVYU5ESWYH5AYyHMRg==
+userAccountControl: 66048
+badPwdCount: 1
+codePage: 0
+countryCode: 0
+badPasswordTime: 132907045154413926
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 132900736097319581
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhXwQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: Loutitia.Mercado
+sAMAccountType: 805306368
+userPrincipalName: Loutitia.Mercado@oscp.exam
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 16010101000001.0Z
+DefaultPassword: ESMWaterP1p3S!
+
+# Evangelina Muslim, FINANCE, EMPLOYEES, oscp.exam
+dn: CN=Evangelina Muslim,OU=FINANCE,OU=EMPLOYEES,DC=oscp,DC=exam
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Evangelina Muslim
+sn: Muslim
+givenName: Evangelina
+distinguishedName: CN=Evangelina Muslim,OU=FINANCE,OU=EMPLOYEES,DC=oscp,DC=exa
+ m
+instanceType: 4
+whenCreated: 20220223070649.0Z
+whenChanged: 20220223082428.0Z
+uSNCreated: 12905
+uSNChanged: 16566
+name: Evangelina Muslim
+objectGUID:: 2heqOeZPgkiTpNaoauB1/g==
+userAccountControl: 66048
+badPwdCount: 1
+codePage: 0
+countryCode: 0
+badPasswordTime: 132907045200351442
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 132900736097944568
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhYAQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: Evangelina.Muslim
+sAMAccountType: 805306368
+userPrincipalName: Evangelina.Muslim@oscp.exam
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+dSCorePropagationData: 20220223072931.0Z
+dSCorePropagationData: 16010101000001.0Z
+DefaultPassword: ESMWaterP1p3S!
+
+# Michaelina Deborah, HR, EMPLOYEES, oscp.exam
+dn: CN=Michaelina Deborah,OU=HR,OU=EMPLOYEES,DC=oscp,DC=exam
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Michaelina Deborah
+sn: Deborah
+givenName: Michaelina
+distinguishedName: CN=Michaelina Deborah,OU=HR,OU=EMPLOYEES,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223070649.0Z
+whenChanged: 20220223082428.0Z
+uSNCreated: 12911
+uSNChanged: 16567
+name: Michaelina Deborah
+objectGUID:: /vROT/HVZU2qbeJ7M+UCjw==
+userAccountControl: 66048
+badPwdCount: 1
+codePage: 0
+countryCode: 0
+badPasswordTime: 132907045222226412
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 132900736098413321
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhYQQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: Michaelina.Deborah
+sAMAccountType: 805306368
+userPrincipalName: Michaelina.Deborah@oscp.exam
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+dSCorePropagationData: 20220223072932.0Z
+dSCorePropagationData: 16010101000001.0Z
+DefaultPassword: ESMWaterP1p3S!
+
+# Kevyn Turk, HR, EMPLOYEES, oscp.exam
+dn: CN=Kevyn Turk,OU=HR,OU=EMPLOYEES,DC=oscp,DC=exam
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Kevyn Turk
+sn: Turk
+givenName: Kevyn
+distinguishedName: CN=Kevyn Turk,OU=HR,OU=EMPLOYEES,DC=oscp,DC=exam
+instanceType: 4
+whenCreated: 20220223070649.0Z
+whenChanged: 20220223082428.0Z
+uSNCreated: 12917
+uSNChanged: 16568
+name: Kevyn Turk
+objectGUID:: TlKh2PK6rUOdrpXD6lCLPg==
+userAccountControl: 66048
+badPwdCount: 1
+codePage: 0
+countryCode: 0
+badPasswordTime: 132907045242254714
+lastLogoff: 0
+lastLogon: 0
+pwdLastSet: 132900736098882078
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAA1o2WDYFQs1YI0TOhYgQAAA==
+accountExpires: 9223372036854775807
+logonCount: 0
+sAMAccountName: Kevyn.Turk
+sAMAccountType: 805306368
+userPrincipalName: Kevyn.Turk@oscp.exam
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=oscp,DC=exam
+dSCorePropagationData: 20220223072932.0Z
+dSCorePropagationData: 16010101000001.0Z
+DefaultPassword: ESMWaterP1p3S!
+
+# passcore, SERVICES, EMPLOYEES, oscp.exam
+dn: CN=passcore,OU=SERVICES,OU=EMPLOYEES,DC=oscp,DC=exam
+
+# search reference
+ref: ldap://ForestDnsZones.oscp.exam/DC=ForestDnsZones,DC=oscp,DC=exam
+
+# search reference
+ref: ldap://DomainDnsZones.oscp.exam/DC=DomainDnsZones,DC=oscp,DC=exam
+
+# search reference
+ref: ldap://oscp.exam/CN=Configuration,DC=oscp,DC=exam
+
+# search result
+search: 2
+result: 0 Success
+
+# numResponses: 49
+# numEntries: 45
+# numReferences: 3
